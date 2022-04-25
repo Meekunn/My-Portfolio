@@ -1,0 +1,94 @@
+@use 'base' as a;
+
+.about{
+    background-color: a.$dark-background;
+    height: fit-content;
+}
+.about-container{
+    padding: 100px;
+    padding-bottom: 20px;
+
+    h2::before{
+        font-family: a.$fontLobster;
+        font-size: 22px;
+        padding: 0 10px 0 5px;
+        color: a.$color-pink;
+        content: "01.";
+    }
+
+    h2{
+        display: flex;
+        align-items: center;
+        font-size: 30px;
+        font-family: a.$fontBaloo;
+        color: a.$backgroundk-gray;
+        margin: 5px 2px 15px 10px;
+    }
+    h2::after{
+        content: "";
+        width: 300px;
+        height: 2px;
+        margin-left: 20px;
+        position: relative;
+        background-color: a.$color-pink;
+    }
+
+    .content{
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        gap: 50px;
+    }
+    .p-content {
+        div{
+            p{
+                color: a.$backgroundk-gray;
+                margin: 0px 0px 15px;
+                font-size: 17px;
+                font-family: a.$fontBaloo;
+
+                a{
+                    color: a.$color-pink;
+                    text-decoration: none;
+                }
+            }
+        }
+        .skills{
+            display: grid;
+            grid-template-columns: repeat(2, minmax(140px, 200px));
+            gap: 0 10px;
+            padding: 0;
+            margin-top: 20px;
+            overflow: hidden;
+            list-style: none;
+
+            li::before{
+                content: "<>";
+                font-family: a.$fontMerienda;
+                font-size: 10px;
+                padding: 5px;
+                color: a.$color-pink;
+            }
+
+            li{
+                font-size: 17px;
+                padding: 5px;
+                font-family: a.$fontLobster;
+                color: a.$backgroundk-gray
+            }
+            
+        }
+    }
+    .image {
+        box-shadow: 0 10px 30px -15px var(--navy-shadow);
+        position: relative;
+        width: 300px;
+        display: flex;
+        align-items: flex-start;
+        img{
+            width: 250px;
+            height: 250px;
+            margin: 50px 0 0 70px;
+            box-shadow: -50px -50px 0 -40px a.$color-pink, 50px 50px 0 -40px a.$backgroundk-gray;
+        }
+    }
+}

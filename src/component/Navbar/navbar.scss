@@ -1,0 +1,175 @@
+@use '../../styles/base' as a; 
+
+.nav-container{
+    background-color: inherit;
+    margin: 15px 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 11;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo{
+    display: flex;
+    align-items: flex-start;
+    transition: all 0.5s ease 0.1s;
+
+    span{
+        padding: 0 3px;
+        font-size: 20px;
+        font-style: italic;
+        letter-spacing: 2px;
+        font-family: a.$fontSatisfy;
+
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
+    }
+}
+
+.navbar-mobile {
+    display: flex;
+    height: 100vh;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    z-index: 9;
+            
+    ol{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 20px;
+        
+        li{
+            margin: 20px 10px;
+            font-size: 18px;
+            color: a.$backgroundk-gray;
+            font-family: a.$fontLobster;
+            list-style: decimal-leading-zero;
+        
+            .nav-link{
+                font-size: 20px;
+                padding-right: 20px;
+                color: a.$color-pink;
+                font-weight: 500;
+                font-family: a.$fontBaloo;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.mobile-nav-icon{
+    display: flex;
+    background-color: inherit;
+    border: none;
+    svg{
+        width: 25px;
+        height: 25px;
+        background-color: inherit;
+        path{
+            fill: a.$color-pinker;
+        }
+    }
+}
+
+@media screen and (min-width: 600px){
+    .nav-container{
+        height: fit-content;
+    }
+    .logo{
+        margin: 5px;
+        span{
+            font-size: 20px;
+        }
+    }
+    .logo:hover{
+        span{
+            font-size: 22px;
+        }
+    }
+    .navbar {
+        ol{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 3px 0;
+
+            li{
+                margin: 5px 15px;
+                font-size: 15px;
+                color: a.$backgroundk-gray;
+                font-family: a.$fontLobster;
+                list-style: decimal-leading-zero;
+
+                .nav-link{
+                    font-size: 15px;
+                    color: a.$color-pink;
+                    font-family: a.$fontBaloo;
+                    text-decoration: none;
+                    transition: all 0.5s ease;
+                }
+                .nav-link:hover{
+                    color: a.$color-pink;
+                    font-weight: 500;
+                }   
+            } 
+        }
+    }
+    .mobile-nav-icon{
+        display: none;
+    }
+}
+@media only screen and (min-width: 768px){
+    .logo{
+        span{
+            font-size: 23px;
+        }
+    }
+    .logo:hover{
+        span{
+            font-size: 25px;
+        }
+    }
+    .navbar {
+        ol{
+            li{
+                margin: 5px 20px;
+                font-size: 15px;
+
+                .nav-link{
+                    font-size: 18px;
+                }  
+            } 
+        }
+    }
+}
+@media only screen and (min-width: 1200px){
+    .logo{
+        margin: 10px;
+        span{
+            font-size: 25px;
+        }
+    }
+    .logo:hover{
+        span{
+            font-size: 27px;
+        }
+    }
+    .navbar {
+        ol{
+            li{
+                margin: 10px 25px;
+                .nav-link{
+                    font-size: 20px;
+                }  
+            } 
+        }
+    }
+}

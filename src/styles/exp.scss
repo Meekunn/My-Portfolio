@@ -1,0 +1,76 @@
+@use 'base' as a;
+
+.experience{
+    background-color: a.$dark-background;
+    height: fit-content;
+}
+.exp-container{
+    padding: 100px;
+
+    h2::before{
+        font-family: a.$fontLobster;
+        font-size: 22px;
+        padding: 0 10px 0 5px;
+        color: a.$color-pink;
+        content: "02.";
+    }
+
+    h2{
+        display: flex;
+        align-items: center;
+        font-size: 30px;
+        font-family: a.$fontBaloo;
+        color: a.$backgroundk-gray;
+        margin: 5px 2px 15px 10px;
+    }
+    h2::after{
+        content: "";
+        width: 300px;
+        height: 2px;
+        margin-left: 20px;
+        position: relative;
+        background-color: a.$color-pink;
+    }
+}
+
+.exp-contents {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.exp-content {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    gap: 50px;
+
+    button{
+        min-width: 150px;
+        min-height: 50px;
+        align-items: center;
+        justify-content: baseline;
+        font-family: a.$fontBaloo;
+        font-size: 15px;
+        background-color: transparent;
+        border: 2px solid a.$color-pink;
+        border-radius: 10px;
+        color: a.$color-pink;
+    }
+    .details{
+        color: a.$backgroundk-gray;
+        font-family: a.$fontLobster;
+        letter-spacing: 1px;
+
+        a{
+            color: a.$color-pink;
+            text-decoration: none;
+            font-weight: 100;
+        }
+        ul{
+            li::marker{
+                color: a.$color-pink;
+            }
+        }
+    }
+}

@@ -1,0 +1,60 @@
+@use 'base' as a;
+
+.contact{
+    background-color: a.$dark-background;
+    height: fit-content;
+}
+.contact-wrapper{
+    padding: 100px;
+
+    h2::before{
+        font-family: a.$fontLobster;
+        font-size: 22px;
+        padding: 0 10px 0 5px;
+        color: a.$color-pink;
+        content: "04.";
+    }
+
+    h2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
+        font-family: a.$fontBaloo;
+        color: a.$backgroundk-gray;
+        margin: 5px 2px 15px 10px;
+    }
+    // h2::after{
+    //     content: "";
+    //     width: 300px;
+    //     height: 2px;
+    //     margin-left: 20px;
+    //     position: relative;
+    //     background-color: a.$color-pink;
+    // }
+    p{
+        color: a.$backgroundk-gray;
+        width: 500px;
+        margin: 20px auto;
+        text-align: center;
+        font-family: a.$fontBaloo;
+        font-size: 18px;
+    }
+    .media{
+        margin: 50px auto;
+        width: 350px;
+        display: flex;
+        justify-content: space-around;
+        a{
+            padding: 10px;
+            border-radius: 20px;
+            svg{
+                width: 30px;
+                height: 30px;
+                path{
+                    fill: #fff;
+                }
+            }
+        }
+    }
+}
