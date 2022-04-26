@@ -1,13 +1,14 @@
 import Typewriter from "typewriter-effect"
-import Animation from "../component/Animation"
+import Animation from "../component/Animation/Animation"
 import Birdy from '../images/bird.png'
-import "../styles/home.scss"
+
+import "../styles/pages/home.scss"
 
 const Home = () => {
     return(
-        <div id="home" style={{backgroundColor: "#1a1a1d", height: "100vh"}}>
+        <div id="home">
             <Animation />
-            <div className="home-wrapper">
+            <>
                 <div className="home-container">
                     <div className="intro">
                         <h1>Hola, my name is</h1>
@@ -27,7 +28,7 @@ const Home = () => {
                         <img src={Birdy} />
                     </div>
                 </div>
-            </div>
+            </>
         </div>
     )
 }

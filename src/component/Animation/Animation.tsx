@@ -1,4 +1,4 @@
-import '../styles/animation.scss'
+import './animation.scss'
 
 const Animation = () => {
     return(

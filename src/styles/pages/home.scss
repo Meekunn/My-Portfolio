@@ -1,0 +1,94 @@
+@use '../base' as a;
+
+.home-container{
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 10px 0 50px;
+    padding: 150px 0 50px 20px;
+}
+.intro{
+    display: flex;
+    margin: 2em 0;
+    width: 65%;
+    font-size: 25px;
+    flex-direction: column;
+    align-items: flex-start;
+    border-bottom: 2px solid a.$color-pink;
+    color: a.$backgroundk-gray;
+    font-family: a.$fontLobster;
+
+    .cursor{
+        color: a.$color-pink;
+    }
+
+    h1{
+        font-size: 20px;
+        padding: 3px;
+        border: none;
+        color: a.$backgroundk-gray;
+        font-family: a.$fontSacramento;
+    }
+    h2{
+        font-size: 30px;
+        border: none;
+        color: a.$color-pink;
+        font-family: a.$fontLobster
+    }
+}
+.png{
+    justify-content: flex-end;
+    align-items: center;
+    width: 35%;
+    display: none;
+
+    img{
+        height: 120px;
+    }
+}
+@media screen and (min-width: 600px){
+    .home-container{
+        padding-left: 50px;
+    }
+    .intro{
+        h2{
+            font-size: 1.8em;
+        }
+    }
+    .png{
+        display: flex;
+        img{
+            height: 150px;
+        }
+    }
+}
+@media only screen and (min-width: 768px){
+    .intro{
+        h2{
+            font-size: 2em;
+        }
+    }
+    .png{
+        img{
+            height: 200px;
+        }
+    }
+}
+@media only screen and (min-width: 1200px){
+    .home-container{
+        margin-left: 100px;
+    }
+    .intro{
+        font-size: 30px;
+        h1{
+            font-size: 25px;
+        }
+        h2{
+            font-size: 2.5em;
+        }
+    }
+    .png{
+        img{
+            height: 200px;
+        }
+    }
+}

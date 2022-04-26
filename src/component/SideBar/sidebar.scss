@@ -1,11 +1,11 @@
-@use 'base' as a;
+@use '../../styles/base' as a; 
 
 .side-nav{
     left: 20px;
-    right: auto;
+    right: 0;
     bottom: 0;
     position: fixed;
-    width: 40px;
+    max-width: 40px;
 
     .side-nav-ul{
         display: flex;
@@ -27,7 +27,7 @@
                 svg{
                     height: 20px;
                     width: 20px;
-                    color: a.$color-pinker
+                    color: a.$color-pinker;
                 }
             }
         }

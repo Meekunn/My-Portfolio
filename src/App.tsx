@@ -1,5 +1,5 @@
 import Navbar from './component/Navbar/Navbar'
-import SideBar from './component/SideBar'
+import SideBar from './component/SideBar/SideBar'
 import Home from './pages/Home'
 import About from './pages/About'
 import Experience from './component/Experience'
@@ -13,17 +13,16 @@ function App() {
   return (
       <div className='App'>
           <Navbar />
-          {/* <SideBar />
-            <>
+          <SideBar />
+          <>
             <Home />
             <About />
-            <Experience />
+            {/* <Experience />
             <Project />
-            <Contact />
-            </> */}
+            <Contact /> */}
+          </>
       </div>
   );
 }
 
 export default App;
-//In case you don't know, Ricky issa baddass when it comes to this shiit. 

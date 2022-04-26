@@ -1,14 +1,15 @@
-@use 'base' as a;
+@use '../../styles/base' as a; 
 
 .bubble-wrapper{
+    top: 70px;
     width: 100%;
     height: 80%;
-    position: absolute;
+    position: fixed;
     background-color: transparent;
 }
 .bubble-wrapper div{
-    height: 60px;
-    width: 60px;
+    height: 30px;
+    width: 30px;
     border: 2px solid a.$color-wine;
     border-radius: 50px;
     position: absolute;
