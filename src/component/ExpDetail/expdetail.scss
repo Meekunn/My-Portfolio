@@ -1,0 +1,120 @@
+@use "../../styles/base" as a;
+
+.exp-content {
+    padding: 0 0 20px 20px;
+    margin-top: -2px;
+    border-right: 2px solid a.$color-pinker;
+    position: relative;
+    
+    h4{
+        line-height: 18px;
+        margin: 0 20px 10px 0;
+        font-weight: 900;
+        text-transform: uppercase;
+        color: #87878d;
+        font-size: 19px;
+        text-align: right;
+        font-family: a.$fontBaloo;
+    }
+    h5{
+        margin: 5px 0 10px 0;
+        text-align: right;
+        a{
+            color: a.$color-pink;
+            font-family: a.$fontLobster;
+            text-align: right;
+            padding: 5px 15px;
+            text-decoration: none;
+            font-size: 16px;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+    }
+    p{
+        margin-top: 0;
+        margin-bottom: 1rem;
+        padding: 0 10px;
+        font-size: 13px;
+        color: a.$backgroundk-gray;
+        text-align: right;
+        font-style: italic;
+        font-family: a.$fontLobster;
+    }
+    ul{
+        padding-right: 20px;
+        margin-right: 10px;
+        li{
+            padding-bottom: 10px;
+            color: a.$backgroundk-gray;
+            font-family: a.$fontBaloo;
+            direction: rtl;
+            text-align: right;
+        }
+        li::marker{
+            color: a.$color-pink;
+        }
+    }
+}
+.exp-content::before{
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    right: -11px;
+    top: -2px;
+    background: #fff;
+    border: 2px solid a.$color-pinker
+}
+
+@media screen and (min-width: 880px){
+    .exp-content{
+        border-left: 2px solid a.$color-pinker;
+        border-right: none;
+
+        h4{
+            text-align: left;
+        }
+        h5{
+            text-align: left;
+            a{
+                padding: 0;
+            }
+        }
+        p{
+            text-align: left;
+            padding: 0;
+        }
+        ul{
+            padding-left: 20px;
+            margin-left: 10px;
+
+            li{
+                direction: ltr;
+                text-align: left;
+            }
+        }
+    }
+    .exp-content::before{
+        left: -11px;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .exp-content{
+        h4{
+            font-size: 22px;
+        }
+        h5{
+            font-size: 20px;
+        }
+        p{
+            font-size: 18px;
+        }
+        ul{
+            li{
+                font-size: 20px;
+            }
+        }
+    }
+}

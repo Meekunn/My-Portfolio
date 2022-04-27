@@ -29,10 +29,10 @@ const Navbar = () => {
                 <div className={ isMobile ? "navbar-mobile" : "navbar"}>
                     <ol>
                         <li>
-                            <Link to="home" spy={true} duration={600} smooth={true} className="nav-link" onClick={()=>setIsMobile(false)}>Home</Link>
+                            <Link to='home' spy={true} duration={600} smooth={true} className="nav-link" onClick={()=>setIsMobile(false)}>Home</Link>
                         </li>
-                        <li><Link to="about" spy={true} duration={600} smooth={true} className="nav-link" onClick={()=>setIsMobile(false)}>About</Link></li>
-                        <li><Link to='experience' spy={true} duration={600} smooth={true} className="nav-link" onClick={()=>setIsMobile(false)}>Experience</Link></li>
+                        <li><Link to='about' spy={true} duration={600} smooth={true} className="nav-link" onClick={()=>setIsMobile(false)}>About</Link></li>
+                        <li><Link to='resume' spy={true} duration={600} smooth={true} className="nav-link" onClick={()=>setIsMobile(false)}>Resume</Link></li>
                         <li><Link to='project' spy={true} duration={600} smooth={true} className="nav-link" onClick={()=>setIsMobile(false)}>Project</Link></li>
                         <li><Link to='contact' spy={true} duration={600} smooth={true} className="nav-link" onClick={()=>setIsMobile(false)}>Contact</Link></li>
                     </ol>

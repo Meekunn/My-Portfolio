@@ -85,3 +85,88 @@
         }
     }
 }
+
+@media screen and (min-width: 600px){
+    .about-container{
+        h2::after{
+            width: 300px;
+        }
+        .content{
+            flex-direction: row;
+            align-items: unset;
+
+            .p-content{
+                width: 60%;
+                padding: 5px 10px;
+
+                .skills{
+                    li::before{
+                        font-size: 8px;
+                    }
+                }
+            }
+
+            .image{
+                margin: 3em 10px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px){
+    h2{
+        font-size: 23px;
+    }
+    .content{
+        column-gap: 50px;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    .about{
+        padding-top: 100px;
+
+        .about-container{
+            h2::before{
+                font-size: 20px;
+            }
+            h2{
+                font-size: 27px;
+            }
+            h2::after{
+                width: 500px;
+            }
+            .content{
+                .p-content{
+                    padding: 5px 20px;
+
+                    p{
+                        font-size: 20px;
+                    }
+
+                    .skills{
+                        grid-template-columns: repeat(2, minmax(80px, 200px));
+
+                        li{
+                            font-size: 20px;
+                        }
+                        li::before{
+                            font-size: 13px;
+                        }
+                    }
+                }
+                .image{
+                    width: 30%;
+                    margin: 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    img{
+                        width: 250px;
+                    }
+                }
+            }
+        }
+    }
+}
