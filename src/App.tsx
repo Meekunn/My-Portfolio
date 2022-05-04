@@ -3,7 +3,7 @@ import SideBar from './component/SideBar/SideBar'
 import Home from './pages/Home'
 import About from './pages/About'
 import Experience from './pages/Experience'
-import Project from './component/Projects'
+import Project from './pages/Projects'
 import Contact from './pages/Contact'
 
 import './App.css'
@@ -18,8 +18,8 @@ function App() {
             <Home />
             <About />
             <Experience />
-            {/* <Project />
-            <Contact /> */}
+            <Project />
+            {/* <Contact /> */}
           </>
       </div>
   );
