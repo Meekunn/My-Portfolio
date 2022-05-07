@@ -45,3 +45,23 @@
         left: 20px;
     }
 }
+
+@media screen and (min-width: 1200px) {
+    .side-nav {
+        .side-nav-ul{
+            li{
+                margin: 15px 0;
+    
+                a{
+                    svg{
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+            }
+        }
+        .side-nav-ul::after {
+            height: 350px;
+        }
+    }
+}

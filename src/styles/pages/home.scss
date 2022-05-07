@@ -38,11 +38,11 @@
 .png{
     justify-content: flex-end;
     align-items: center;
-    width: 35%;
+    width: 25%;
     display: none;
 
     img{
-        height: 120px;
+        width: 90%;
     }
 }
 @media screen and (min-width: 600px){

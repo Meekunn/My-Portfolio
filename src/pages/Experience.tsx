@@ -41,8 +41,8 @@ const Experience = () => {
         <div id="resume" className='experience'>
                 <div className='exp-container'>
                 <h2>Resume</h2>
-                <p className='c-vitae'>For my full curriculum vitae please visit my <a href="https://www.linkedin.com/in/adedamola-orofin-6568641ba/" target="_blank" className='download'>LinkedIn </a> 
-                profile or download <a href="/files/OrofinAdedamola_CV.pdf" target="_blank" download className='download'>here</a> </p>
+                <p className='c-vitae'>For my full curriculum vitae please visit my <a href="https://www.linkedin.com/in/adedamola-orofin-6568641ba/" target="_blank" rel="noreferrer" className='download'>LinkedIn </a> 
+                profile or download <a href="/files/OrofinAdedamola_CV.pdf" target="_blank" rel="noreferrer" download className='download'>here</a> </p>
                 <div className="exp-contents">
                     <h3>Work Experience</h3>
                     {details.map((detail: any) => {
@@ -61,12 +61,12 @@ const Experience = () => {
                     <h3>Tech Communities</h3>
                     <div className='exp-content'>
                         <h4>Member</h4>
-                        <h5><a href="https://shecodeafrica.org/" target="_blank" rel="noopener noreferrer">She Code Africa</a></h5>
+                        <h5><a href="https://shecodeafrica.org/" target="_blank" rel="noreferrer">She Code Africa</a></h5>
                         <p>April 2022 - present</p>
                     </div>
                     <div className='exp-content'>
                         <h4>Member</h4>
-                        <h5><a href="https://devcareer.io/" target="_blank" rel="noopener noreferrer">DevCareer Africa</a></h5>
+                        <h5><a href="https://devcareer.io/" target="_blank" rel="noreferrer">DevCareer Africa</a></h5>
                         <p>April 2022 - present</p>
                     </div>
                </div>

@@ -1,6 +1,6 @@
 import Typewriter from "typewriter-effect"
 import Animation from "../component/Animation/Animation"
-import Birdy from '../images/bird.png'
+import TechMoji from '../images/techmoji.png'
 
 import "../styles/pages/home.scss"
 
@@ -11,7 +11,7 @@ const Home = () => {
             <>
                 <div className="home-container">
                     <div className="intro">
-                        <h1>Hola, my name is</h1>
+                        <h1>Hola, mi nombre es</h1>
                         <h2>Adedamola Orofin</h2>
                         <Typewriter
                         options={{
@@ -25,7 +25,7 @@ const Home = () => {
                         />
                     </div>
                     <div className='png'>
-                        <img src={Birdy} />
+                        <img src={TechMoji} alt="Tech lady png"/>
                     </div>
                 </div>
             </>
