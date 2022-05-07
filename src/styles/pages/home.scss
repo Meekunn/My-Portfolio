@@ -1,93 +1,107 @@
 @use '../base' as a;
 
-.home-container{
+.home-container {
     display: flex;
     justify-content: flex-start;
-    margin: 0 10px 0 50px;
-    padding: 150px 0 50px 20px;
+    margin: 0 0.625rem 0 3.125rem;
+    padding: 9.375rem 0 3.125rem 1.25rem;
 }
-.intro{
+
+.intro {
     display: flex;
-    margin: 2em 0;
+    margin: 1.988rem 0;
     width: 65%;
-    font-size: 25px;
+    font-size: 1.563rem;
     flex-direction: column;
     align-items: flex-start;
     border-bottom: 2px solid a.$color-pink;
     color: a.$backgroundk-gray;
     font-family: a.$fontLobster;
 
-    .cursor{
+    .cursor {
         color: a.$color-pink;
     }
 
-    h1{
-        font-size: 20px;
-        padding: 3px;
+    h1 {
+        font-size: 1.25rem;
+        padding: 0.1875rem;
         border: none;
         color: a.$backgroundk-gray;
         font-family: a.$fontSacramento;
     }
-    h2{
-        font-size: 30px;
+
+    h2 {
+        font-size: 1.875rem;
         border: none;
         color: a.$color-pink;
         font-family: a.$fontLobster
     }
 }
-.png{
+
+.png {
     justify-content: flex-end;
     align-items: center;
     width: 25%;
     display: none;
 
-    img{
+    img {
         width: 90%;
     }
 }
-@media screen and (min-width: 600px){
-    .home-container{
-        padding-left: 50px;
+
+@media screen and (min-width: 600px) {
+    .home-container {
+        padding-left: 3.125rem;
     }
-    .intro{
-        h2{
+
+    .intro {
+        h2 {
             font-size: 1.8em;
         }
     }
-    .png{
+
+    .png {
         display: flex;
-        img{
+        
+        img {
             height: 150px;
         }
     }
 }
-@media only screen and (min-width: 768px){
-    .intro{
-        h2{
-            font-size: 2em;
+
+@media only screen and (min-width: 768px) {
+    .intro {
+        h2 {
+            font-size: 1.988rem;
         }
     }
-    .png{
-        img{
+
+    .png {
+        img {
             height: 200px;
         }
     }
 }
-@media only screen and (min-width: 1200px){
-    .home-container{
-        margin-left: 100px;
+
+@media only screen and (min-width: 1200px) {
+    .home-container {
+        margin-left: 6.25rem;
     }
-    .intro{
-        font-size: 30px;
-        h1{
-            font-size: 25px;
+
+    .intro {
+        font-size: 1.875rem;
+
+        h1 {
+            font-size: 1.563rem;
         }
-        h2{
-            font-size: 2.5em;
+
+        h2 {
+            font-size: 2.5rem;
         }
     }
-    .png{
-        img{
+
+    .png {
+        img {
             height: 200px;
         }
     }

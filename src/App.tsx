@@ -7,7 +7,7 @@ import Project from './pages/Project'
 import Contact from './pages/Contact'
 import Footer from './component/Footer/Footer'
 
-import './App.css'
+import './App.scss'
 
 function App() {
 

@@ -1,43 +1,47 @@
 @use '../base' as a;
 
-#project{
+#project {
     background-color: a.$dark-background;
-    padding-top: 60px;
+    padding-top: 3.75rem;
+    border-top: 0.5px dashed a.$color-pinker;
 }
-.project-container{
-    padding: 20px 20px 20px 60px;
 
-    h2::before{
+.project-container {
+    padding: 1.25rem 1.25rem 1.25rem 3.75rem;
+
+    h2::before {
         font-family: a.$fontLobster;
-        font-size: 15px;
-        padding-right: 10px;
+        font-size: 0.9rem;
+        padding-right: 0.625rem;
         color: a.$color-pink;
         content: "04.";
     }
 
-    h2{
+    h2 {
         display: flex;
         align-items: center;
-        font-size: 20px;
+        font-size: 1.25rem;
         font-family: a.$fontBaloo;
         color: a.$backgroundk-gray;
-        margin: 5px 2px 10px 0;
+        margin: 0.3rem 0.125rem 0.625rem 0;
     }
-    h2::after{
+
+    h2::after {
         content: "";
         width: 150px;
         height: 2px;
-        margin-left: 10px;
+        margin-left: 0.625rem;
         position: relative;
         background-color: a.$color-pink;
     }
 }
+
 .projects-wrapper {
     display: flex;
     flex-flow: row wrap;
     flex-grow: 1;
 
-    .project{
+    .project {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -45,87 +49,96 @@
         gap: 20px;
         background-color: #262626;
         border-radius: 10px;
-        margin: 20px 10px 20px 0;
+        margin: 1.25rem 0.625rem 1.25rem 0;
         border: 1px dashed a.$color-pinker;
 
-        .sample-image{
+        .sample-image {
             display: flex;
             justify-content: center;
             align-items: center;
 
-            img{
+            img {
                 width: 80%;
             }
         }
 
-        .content{
+        .content {
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
 
-            .heading{
+            .heading {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
 
-                h3{
-                    margin: 5px 10px;
+                h3 {
+                    margin: 0.3rem 0.625rem;
                     font-size: 1.3rem;
                     color: a.$color-pink;
                     text-decoration: none;
                     font-family: a.$fontBaloo;
                 }
-                a{
+
+                a {
                     background-color: transparent;
-                    margin: 5px 15px 0 0;
-                    svg{
+                    margin: 0.3rem 0.9rem 0 0;
+
+                    svg {
                         width: 25px;
                         height: 25px;
                     
-                        path{
+                        path {
                             fill: a.$color-pink;
                         }
                     }
                 }
             }
             
-            p{
-                margin: 5px 15px;
+            p {
+                margin: 0.3rem 0.9rem;
                 font-size: 0.9rem;
                 color: a.$backgroundk-gray;
                 font-family: a.$fontBaloo;
                 
-                a{
+                a {
                     color: a.$color-pink;
+                }
+
+                a:hover {
+                    color: a.$color-pinker;
                 }
             }
-            ul{
-                padding-left: 20px;
+
+            ul {
+                padding-left: 1.25rem;
                 list-style: none;
                 
-                li::before{
+                li::before {
                     content: ">";
                     font-family: a.$fontMerienda;
-                    font-size: 10px;
-                    padding: 5px;
+                    font-size: 0.625rem;
+                    padding: 0.3rem;
                     color: a.$color-pink;
                 }
                 
-                li{
+                li {
                     font-size: 0.9rem;
-                    padding: 5px 0;
+                    padding: 0.3rem 0;
                     font-family: a.$fontBaloo;
                     color: a.$backgroundk-gray;
                 }
             }
-            .dependencies{
-                margin: 10px;
+
+            .dependencies {
+                margin: 0.625rem;
                 display: flex;
                 flex-wrap: wrap;
-                p{
-                    padding: 3px 5px;
+
+                p {
+                    padding: 0.1875rem 0.3rem;
                     color: a.$color-pink;
-                    margin: 5px;
+                    margin: 0.3rem;
                     font-size: 0.9rem;
                     border: 1px solid a.$backgroundk-gray;
                     border-radius: 8px;
@@ -135,56 +148,65 @@
     }
 }
 
-@media screen and (min-width: 600px){
-    .project-container{
-        h2::after{
-            width: 300px;
+@media screen and (min-width: 600px) {
+    #project {
+        border: none;
+
+        .project-container {
+            h2::after {
+                width: 300px;
+            }
         }
     }
 }
-@media only screen and (min-width: 768px){
+
+@media only screen and (min-width: 768px) {
     .project-container {
-        h2{
-            font-size: 23px;
+        h2 {
+            font-size: 1.4375rem;
         }
-        .projects-wrapper{
+
+        .projects-wrapper {
             margin: 0 1.5rem;
 
             .project {
-                margin: 20px 20px 20px 0;
+                margin: 1.25rem 1.25rem 1.25rem 0;
             }
         }
     }
 }
-@media only screen and (min-width: 1200px){
-    #project{
-        padding-top: 100px;
+@media only screen and (min-width: 1200px) {
+    #project {
+        padding-top: 6.25rem;
 
-        .project-container{
-            h2::before{
-                font-size: 20px;
+        .project-container {
+            h2::before {
+                font-size: 1.25rem;
             }
-            h2{
-                font-size: 27px;
+
+            h2 {
+                font-size: 1.688rem;
             }
-            h2::after{
+
+            h2::after {
                 width: 500px;
             }
 
             .projects-wrapper {
                 flex-flow: column;
-                margin: 20px;
+                margin: 1.25rem;
                 
-                .project{
+                .project {
                     flex-direction: row;
                     align-items: flex-start;
                     justify-content: space-between;
                     max-width: none;
-                    padding: 20px;
+                    padding: 1.25rem;
 
                     .sample-image {
                         width: 60%;
                     }
+
                     .content {
                         align-items: flex-end;
 
@@ -192,8 +214,9 @@
                             h3 {
                                 font-size: 1.5rem;
                             }
-                            a{
-                                svg{
+
+                            a {
+                                svg {
                                     width: 30px;
                                     height: 30px;
                                 }
@@ -204,14 +227,17 @@
                             font-size: 1.2rem;
                             text-align: right;
                         }
+
                         ul {
                             direction: rtl;
-                            li{
+
+                            li {
                                 font-size: 1.1rem;
                             }
                         }
-                        .dependencies{
-                            p{
+
+                        .dependencies {
+                            p {
                                 font-size: 1.1rem;
                             }
                         }

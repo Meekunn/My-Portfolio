@@ -38,7 +38,7 @@ const education: IDetails [] = [
 const Experience = () => {
 
     return(
-        <div id="resume" className='experience'>
+        <div id="resume">
                 <div className='exp-container'>
                 <h2>Resume</h2>
                 <p className='c-vitae'>For my full curriculum vitae please visit my <a href="https://www.linkedin.com/in/adedamola-orofin-6568641ba/" target="_blank" rel="noreferrer" className='download'>LinkedIn </a> 

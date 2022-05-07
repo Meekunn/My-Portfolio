@@ -60,7 +60,7 @@ const Contact = () => {
         <div id="contact">
             <div className="contact-container">
                 <h2>Contact Me</h2>
-                <p>I'm open to opportunities(jobs and internships) to work and improve my skills. Also, you can reach out to me on any of the mentioned media for colloboration.</p>
+                <p>I'm open to opportunities(jobs and internships) to work and improve my skills. Also, you can reach out to me on any of the mentioned media for collaboration.</p>
                 <div className='media'>
                     <a href="https://github.com/Meekunn/" target="_blank" rel="noreferrer" style={{backgroundColor: "rgb(51, 51, 51)"}}>
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">

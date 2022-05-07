@@ -1,50 +1,50 @@
 @use "../../styles/base" as a;
 
 .exp-content {
-    padding: 0 0 20px 20px;
+    padding: 0 0 1.25rem 1.25rem;
     margin-top: -2px;
     border-right: 2px solid a.$color-pinker;
     position: relative;
     
     h4{
-        line-height: 18px;
-        margin: 0 20px 10px 0;
+        line-height: 1.125rem;
+        margin: 0 1.25rem 0.625rem 0;
         font-weight: 900;
         text-transform: uppercase;
         color: #87878d;
-        font-size: 19px;
+        font-size: 1.188rem;
         text-align: right;
         font-family: a.$fontBaloo;
     }
     h5{
-        margin: 5px 0 10px 0;
+        margin: 0.3rem 0 0.625rem 0;
         text-align: right;
         a{
             color: a.$color-pink;
             font-family: a.$fontLobster;
             text-align: right;
-            padding: 5px 15px;
+            padding: 0.3rem 0.9rem;
             text-decoration: none;
-            font-size: 16px;
-            margin-bottom: 10px;
+            font-size: 1rem;
+            margin-bottom: 0.625rem;
             font-weight: 600;
         }
     }
     p{
         margin-top: 0;
         margin-bottom: 1rem;
-        padding: 0 10px;
-        font-size: 13px;
+        padding: 0 0.625rem;
+        font-size: 0.813rem;
         color: a.$backgroundk-gray;
         text-align: right;
         font-style: italic;
         font-family: a.$fontLobster;
     }
     ul{
-        padding-right: 20px;
-        margin-right: 10px;
+        padding-right: 1.25rem;
+        margin-right: 0.625rem;
         li{
-            padding-bottom: 10px;
+            padding-bottom: 0.625rem;
             color: a.$backgroundk-gray;
             font-family: a.$fontBaloo;
             direction: rtl;
@@ -86,8 +86,8 @@
             padding: 0;
         }
         ul{
-            padding-left: 20px;
-            margin-left: 10px;
+            padding-left: 1.25rem;
+            margin-left: 0.625rem;
 
             li{
                 direction: ltr;
@@ -103,17 +103,17 @@
 @media screen and (min-width: 1200px){
     .exp-content{
         h4{
-            font-size: 22px;
+            font-size: 1.375rem;
         }
         h5{
-            font-size: 20px;
+            font-size: 1.25rem;
         }
         p{
-            font-size: 18px;
+            font-size: 1.125rem;
         }
         ul{
             li{
-                font-size: 20px;
+                font-size: 1.25rem;
             }
         }
     }

@@ -4,10 +4,11 @@
     background-color: a.$dark-background;
     padding-top: 1px;
     bottom: 0;
+    border-top: 0.5px dashed a.$color-pinker;
 
     h3{
         font-size: 0.8rem;
-        font-family: a.$fontMerienda;
+        font-family: a.$fontSatisfy;
         color: a.$color-pinker;
         padding: 10px;
         text-align: center;
@@ -16,6 +17,7 @@
 
 @media screen and (min-width: 1200px) {
     .footer {
+        border: none;
         h3{
             font-size: 1.2rem;
         }

@@ -1,68 +1,74 @@
 @use '../base' as a;
 
-#contact{
+#contact {
     background-color: a.$dark-background;
-    padding-top: 60px;
+    padding-top: 3.75rem;
+    border-top: 0.5px dashed a.$color-pinker;
 }
-.contact-container{
-    padding: 20px 20px 20px 60px;
+
+.contact-container {
+    padding: 1.25rem 1.25rem 1.25rem 3.75rem;
     display: flex;
     flex-direction: column;
 
-    h2::before{
+    h2::before {
         font-family: a.$fontLobster;
-        font-size: 15px;
-        padding-right: 10px;
+        font-size: 0.9rem;
+        padding-right: 0.625rem;
         color: a.$color-pink;
         content: "05.";
     }
 
-    h2{
+    h2 {
         display: flex;
         align-items: center;
-        font-size: 20px;
+        font-size: 1.25rem;
         font-family: a.$fontBaloo;
         color: a.$backgroundk-gray;
-        margin: 5px 2px 10px 0;
+        margin: 0.3rem 0.125rem 0.625rem 0;
     }
-    h2::after{
+
+    h2::after {
         content: "";
         width: 150px;
         height: 2px;
-        margin-left: 10px;
+        margin-left: 0.625rem;
         position: relative;
         background-color: a.$color-pink;
     }
-    p{
+
+    p {
         color: a.$backgroundk-gray;
-        margin: 10px auto;
+        margin: 0.625rem auto;
         text-align: center;
         font-family: a.$fontBaloo;
         font-size: 0.9rem;
     }
 
-    .media{
+    .media {
         display: flex;
         justify-content: space-around;
-        margin: 20px auto ;
+        margin: 1.25rem auto ;
 
-        a{
+        a {
             display: flex;
-            padding: 8px;
+            padding: 0.5rem;
             border-radius: 50%;
-            margin: 5px;
-            svg{
+            margin: 0.3rem;
+            
+            svg {
                 width: 25px;
                 height: 25px;
-                path{
+
+                path {
                     fill: #fff;
                 }
             }
         }
     }
 
-    .form{
-        margin: 20px 0;
+    .form {
+        margin: 1.25rem 0;
 
         h3 {
             color: a.$backgroundk-gray;
@@ -70,39 +76,43 @@
             font-size: 1.4rem;
         }
 
-        form{
+        form {
             display: flex;
             flex-flow: column;
 
-            .input, textarea{
+            .input, textarea {
                 border: 1px solid a.$color-pinker;
                 border-radius: 5px;
-                padding: 10px 5px;
+                padding: 0.625rem 0.3rem;
                 background-color: inherit;
                 font-size: 1rem;
-                margin: 10px 5px;
+                margin: 0.625rem 0.3rem;
                 color: a.$backgroundk-gray;
                 font-weight: 700;
                 font-family: a.$fontBaloo;
                 min-width: 225px;
             }
+
             .input:focus, textarea:focus {
                 border: 2px solid a.$color-pink;
                 background-color: inherit;
                 outline: none;
             }
+
             .input::placeholder, textarea::placeholder {
                 color: a.$backgroundk-gray;
                 font-weight: 900;
             }
-            textarea{
+
+            textarea {
                 min-width: 225px;
             }
-            .submit, .disabled{
-                border-radius: 5px;
-                padding: 10px 5px;
+
+            .submit, .disabled {
+                border-radius: 0.3rem;
+                padding: 0.625rem 0.3rem;
                 font-size: 1rem;
-                margin: 10px 5px;
+                margin: 0.625rem 0.3rem;
                 font-family: a.$fontBaloo;
                 border: 1px solid a.$color-pinker;
                 background-color: a.$color-pinker;
@@ -111,12 +121,15 @@
                 min-width: 240px;
                 text-align: center;
             }
-            .submit:hover{
-                background-color: a.$color-pinker;
+
+            .submit:hover {
+                background-color: a.$color-pink;
             }
-            .submit:focus{
+
+            .submit:focus {
                 border: 1px solid gray;
             }
+
             .disabled {
                 background-color: gray;
                 border: 1px solid gray;
@@ -129,66 +142,76 @@
 }
 
 @media screen and (min-width: 600px) {
-    .contact-container {
-        p{
-            margin: 10px;
-            font-size: 1rem;
-        }
-        .form {
-            margin: 20px 40px;
+    #contact {
+        border: none;
 
-            h3 {
-                font-size: 1.6rem;
+        .contact-container {
+            p {
+                margin: 0.625rem;
+                font-size: 1rem;
+            }
+            .form {
+                margin: 1.25rem 2.5rem;
+    
+                h3 {
+                    font-size: 1.6rem;
+                }
             }
         }
     }
 }
 
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 768px) {
     .contact-container {
-        h2{
-            font-size: 23px;
+        h2 {
+            font-size: 1.4375rem;
         }
     }
 }
 
-@media only screen and (min-width: 1200px){
-    #contact{
-        padding-top: 100px;
+@media only screen and (min-width: 1200px) {
+    #contact {
+        padding-top: 6.25rem;
 
-        .contact-container{
-            h2::before{
-                font-size: 20px;
+        .contact-container {
+            h2::before {
+                font-size: 1.25rem;
             }
-            h2{
-                font-size: 27px;
+
+            h2 {
+                font-size: 1.688rem;
             }
-            h2::after{
+
+            h2::after {
                 width: 500px;
             }
+
             p{
                 font-size: 1.2rem;
             }
-            .media{
-                a{
-                    margin: 5px 10px;
+
+            .media {
+                a {
+                    margin: 0.3rem 0.625rem;
                 }
             }
-            .form{
-                margin: 20px 4rem;
 
-                h3{
+            .form {
+                margin: 1.25rem 4rem;
+
+                h3 {
                     font-size: 2rem;
                 }
 
                 form {
                     margin: 0 5rem;
 
-                    .input, textarea{
-                        padding: 20px 10px;
+                    .input, textarea {
+                        padding: 1.25rem 0.625rem;
                         font-size: 1.2rem;
                     }
-                    .submit, .disabled{
+
+                    .submit, .disabled {
                         font-size: 1.2rem;
                     }
                 }

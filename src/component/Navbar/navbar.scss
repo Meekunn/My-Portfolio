@@ -1,8 +1,9 @@
 @use '../../styles/base' as a; 
 
-.nav-container{
-    background-color: inherit;
-    padding: 15px 10px;
+.nav-container {
+    background-color: a.$dark-background;
+    opacity: 0.9;
+    padding: 0.9rem 0.625rem;
     position: fixed;
     top: 0;
     left: 0;
@@ -11,164 +12,197 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    border-bottom: 1px solid a.$color-pinker;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
-.logo{
+.logo {
     display: flex;
     align-items: flex-start;
     transition: all 0.5s ease 0.1s;
 
-    span{
-        padding: 0 3px;
-        font-size: 20px;
+    span {
+        padding: 0 0.1875rem;
+        font-size: 1.25rem;
         font-style: italic;
         letter-spacing: 2px;
         font-family: a.$fontSatisfy;
 
-        a{
+        a {
             text-decoration: none;
             color: inherit;
         }
     }
 }
 
-.navbar-mobile {
+.navbar {
     display: flex;
+    position: absolute;
     height: 100vh;
-    bottom: 0;
-    top: 0;
-    right: 0;
+    top: 50px;
+    right: -100%;
+    width: 70%;
     z-index: 9;
+    transition: all 0.5s ease;
             
-    ol{
+    ol {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin: 20px;
-        
-        
-        li{
-            margin: 20px 10px;
-            font-size: 18px;
+        margin: 0.625rem 1.25rem;
+
+        li {
+            margin: 1.25rem 0.625rem;
+            font-size: 1.125rem;
             color: a.$backgroundk-gray;
             font-family: a.$fontLobster;
             list-style: decimal-leading-zero;
         
-            .nav-link{
-                font-size: 20px;
-                padding-right: 20px;
+            .nav-link {
+                font-size: 1.25rem;
+                padding-right: 1.25rem;
                 color: a.$color-pink;
                 font-weight: 500;
                 font-family: a.$fontBaloo;
                 text-decoration: none;
+                transition: all 0.2s ease;
+            }
+
+            .nav-link:hover {
+                color: a.$color-pink;
+                font-weight: 500;
             }
         }
     }
+}
+.navbar.mobile {
+    background: a.$dark-background;
+    right: 0;
+    transition: all 0.5s ease;
+    z-index: 9;
 }
 
 .mobile-nav-icon{
     display: flex;
     background-color: inherit;
     border: none;
-    svg{
+
+    svg {
         width: 25px;
         height: 25px;
         background-color: inherit;
-        path{
+        
+        path {
             fill: a.$color-pinker;
         }
     }
 }
 
-@media screen and (min-width: 600px){
-    .nav-container{
+@media screen and (min-width: 600px) {
+    .nav-container {
         height: fit-content;
     }
-    .logo{
-        margin: 5px;
-        span{
-            font-size: 20px;
+
+    .logo {
+        margin: 0.3rem;
+        span {
+            font-size: 1.25rem;
         }
     }
-    .logo:hover{
-        span{
-            font-size: 22px;
+
+    .logo:hover {
+        span {
+            font-size: 1.375rem;
         }
     }
+
     .navbar {
-        ol{
+        display: flex;
+        position: relative;
+        height: fit-content;
+        top: 0;
+        right: 0;
+        z-index: 9;
+        ol {
             display: flex;
+            flex-direction: row;
             justify-content: space-around;
             align-items: center;
-            margin: 3px 0;
+            margin: 0.1875rem 0;
 
-            li{
-                margin: 5px 15px;
-                font-size: 15px;
+            li {
+                margin: 0.3rem 0.9rem;
+                font-size: 0.9rem;
                 color: a.$backgroundk-gray;
                 font-family: a.$fontLobster;
                 list-style: decimal-leading-zero;
 
-                .nav-link{
-                    font-size: 15px;
+                .nav-link {
+                    font-size: 0.9rem;
+                    color: a.$color-pinker;
+                }  
+
+                .active {
                     color: a.$color-pink;
-                    font-family: a.$fontBaloo;
-                    text-decoration: none;
-                    transition: all 0.5s ease;
                 }
-                .nav-link:hover{
-                    color: a.$color-pink;
-                    font-weight: 500;
-                }   
             } 
         }
     }
-    .mobile-nav-icon{
+
+    .mobile-nav-icon {
         display: none;
     }
 }
-@media only screen and (min-width: 768px){
-    .logo{
-        span{
-            font-size: 23px;
+@media only screen and (min-width: 768px) {
+    .logo {
+        span {
+            font-size: 1.4375rem;
         }
     }
-    .logo:hover{
-        span{
-            font-size: 25px;
+
+    .logo:hover {
+        span {
+            font-size: 1.563rem;
         }
     }
+
     .navbar {
-        ol{
-            li{
-                margin: 5px 20px;
-                font-size: 15px;
+        ol {
+            li {
+                margin: 0.3rem 1.25rem;
+                font-size: 0.9rem;
 
                 .nav-link{
-                    font-size: 18px;
+                    font-size: 1.125rem;
                 }  
             } 
         }
     }
 }
-@media only screen and (min-width: 1200px){
-    .logo{
-        margin: 10px;
-        span{
-            font-size: 25px;
+
+@media only screen and (min-width: 1200px) {
+    .logo {
+        margin: 0.625rem;
+        
+        span {
+            font-size: 1.563rem;
         }
     }
-    .logo:hover{
-        span{
-            font-size: 27px;
+
+    .logo:hover {
+        span {
+            font-size: 1.688rem;
         }
     }
+
     .navbar {
-        ol{
-            li{
-                margin: 10px 25px;
-                .nav-link{
-                    font-size: 20px;
+        ol {
+            li {
+                margin: 0.625rem 1.563rem;
+
+                .nav-link {
+                    font-size: 1.25rem;
                 }  
             } 
         }

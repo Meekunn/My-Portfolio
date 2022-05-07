@@ -50,7 +50,7 @@ const Project = () => {
                                     </svg>
                                 </a>
                             </div>
-                            <p>A portfolio website built with bootstrap<a href='https://meekunn.github.io/' target="_blank" rel="noreferrer">https://meekunn.github.io/</a></p>
+                            <p>A portfolio website built with bootstrap. Check it out <a href='https://meekunn.github.io/' target="_blank" rel="noreferrer">https://meekunn.github.io/</a></p>
                             <ul>
                                 <li>Built with Bootstrap template</li>
                                 <li>Hosted on Github</li>

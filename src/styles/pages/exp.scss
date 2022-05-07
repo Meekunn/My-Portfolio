@@ -1,44 +1,48 @@
 @use '../base' as a;
 
-.experience{
+#resume {
     background-color: a.$dark-background;
-    padding-top: 60px;
+    padding-top: 3.75rem;
+    border-top: 0.5px dashed a.$color-pinker;
 }
-.exp-container{
-    padding: 20px 20px 20px 60px;
 
-    h2::before{
+.exp-container {
+    padding: 1.25rem 1.25rem 1.25rem 3.75rem;
+
+    h2::before {
         font-family: a.$fontLobster;
-        font-size: 15px;
-        padding-right: 10px;
+        font-size: 0.9rem;
+        padding-right: 0.625rem;
         color: a.$color-pink;
         content: "02.";
     }
 
-    h2{
+    h2 {
         display: flex;
         align-items: center;
-        font-size: 20px;
+        font-size: 1.25rem;
         font-family: a.$fontBaloo;
         color: a.$backgroundk-gray;
-        margin: 5px 2px 10px 0;
+        margin: 0.3rem 0.125rem 0.625rem 0;
     }
-    h2::after{
+
+    h2::after {
         content: "";
         width: 150px;
         height: 2px;
-        margin-left: 5px;
+        margin-left: 0.3rem;
         position: relative;
         background-color: a.$color-pink;
     }
-    .c-vitae{
-        margin: 5px;
+
+    .c-vitae {
+        margin: 0.3rem;
         padding: 0 10px;
-        font-size: 15px;
+        font-size: 0.9rem;
         color: a.$backgroundk-gray;
         font-family: a.$fontBaloo;
         
-        .download{
+        .download {
             color: a.$color-pink;
             text-decoration: none;
         }
@@ -48,68 +52,81 @@
 .exp-contents {
     display: flex;
     flex-direction: column;
-    margin: 20px;
-    h3{
-        font-size: 22px;
+    margin: 1.25rem;
+
+    h3 {
+        font-size: 1.375rem;
         color: #87878d;
-        margin: 20px;
+        margin: 1.25rem;
         text-align: right;
         font-weight: 900;
         font-family: a.$fontLobster;
     }
 }
 
-@media screen and (min-width: 600px){
-    .exp-container{
-        h2::after{
-            width: 300px;
-        }
-        .c-vitae{
-            font-size: 16px;
-        }
-        .exp-contents{
-            margin: 10px 50px;
+@media screen and (min-width: 600px) {
+    #resume {
+        border: none;
+
+        .exp-container {
+            h2::after {
+                width: 300px;
+            }
+
+            .c-vitae {
+                font-size: 1rem;
+            }
+
+            .exp-contents {
+                margin: 0.625rem 3.125rem;
+            }
         }
     }
 }
 
-@media screen and (min-width: 768px){
-    .exp-container{
-        .exp-contents{
-            margin: 10px 7em;
+@media screen and (min-width: 768px) {
+    .exp-container {
+        .exp-contents {
+            margin: 0.625rem 6.988rem;
         }
     }
 }
 
-@media screen and (min-width: 880px){
-    .exp-container{
-        .exp-contents{
-            margin: 10px 3em;
+@media screen and (min-width: 880px) {
+    .exp-container {
+        .exp-contents {
+            margin: 0.625rem 3em;
         }
-        h3{
+
+        h3 {
             text-align: left;
         }
     }
 }
 
-@media screen and (min-width: 1200px){
-    .exp-container{
-        h2::before{
-            font-size: 20px;
+@media screen and (min-width: 1200px) {
+    .exp-container {
+        h2::before {
+            font-size: 1.25rem;
         }
-        h2{
-            font-size: 27px;
+
+        h2 {
+            font-size: 1.688rem;
         }
-        h2::after{
+
+        h2::after {
             width: 500px;
         }
-        .c-vitae{
-            font-size: 20px;
+
+        .c-vitae {
+            font-size: 1.25rem;
         }
-        .exp-contents{
-            margin: 10px 3em;
-            h3{
-                font-size: 25px;
+
+        .exp-contents {
+            margin: 0.625rem 3em;
+
+            h3 {
+                font-size: 1.563rem;
             }
         }
     }

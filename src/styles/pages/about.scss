@@ -1,32 +1,35 @@
 @use '../base' as a;
 
-#about{
+#about {
     background-color: a.$dark-background;
-    padding-top: 60px;
+    padding-top: 3.75rem;
 }
-.about-container{
-    padding: 20px 20px 20px 60px;
 
-    h2::before{
+.about-container {
+    padding: 1.25rem 1.25rem 1.25rem 3.75rem;
+
+    h2::before {
         font-family: a.$fontLobster;
-        font-size: 15px;
-        padding-right: 10px;
+        font-size: 0.9rem;
+        padding-right: 0.625rem;
         color: a.$color-pink;
         content: "01.";
     }
-    h2{
+
+    h2 {
         display: flex;
         align-items: center;
-        font-size: 20px;
+        font-size: 1.25rem;
         font-family: a.$fontBaloo;
         color: a.$backgroundk-gray;
-        margin: 5px 2px 10px 0;
+        margin: 0.3rem 0.125rem 0.625rem 0;
     }
-    h2::after{
+
+    h2::after {
         content: "";
         width: 150px;
-        height: 2px;
-        margin-left: 10px;
+        height: 0.125rem;
+        margin-left: 0.625rem;
         position: relative;
         background-color: a.$color-pink;
     }
@@ -36,135 +39,150 @@
         flex-direction: column;
         align-items: center;
     }
+
     .p-content {
-        .bio{
-            margin: 5px;
-            p{
+        .bio {
+            margin: 0.3rem;
+
+            p {
                 color: a.$backgroundk-gray;
-                text-indent: 10px;
-                margin: 0px 0px 10px;
-                font-size: 15px;
+                text-indent: 0.625rem;
+                margin: 0px 0px 0.625rem;
+                font-size: 0.9rem;
                 font-family: a.$fontBaloo;
-                a{
+
+                a {
                     color: a.$color-pink;
                     text-decoration: none;
                 }
             }
         }
-        .skills{
+
+        .skills {
             display: grid;
             grid-template-columns: repeat(2, minmax(80px, 150px));
-            gap: 0 10px;
+            gap: 0 0.625rem;
             padding: 0;
-            margin-top: 10px;
+            margin-top: 0.625rem;
             overflow: hidden;
             list-style: none;
 
-            li::before{
+            li::before {
                 content: "<>";
                 font-family: a.$fontMerienda;
-                font-size: 5px;
-                padding: 5px;
+                font-size: 0.3rem;
+                padding: 0.3rem;
                 color: a.$color-pink;
             }
 
-            li{
-                font-size: 15px;
-                padding: 5px;
+            li {
+                font-size: 0.9rem;
+                padding: 0.3rem;
                 font-family: a.$fontLobster;
                 color: a.$backgroundk-gray
             }
-            
         }
     }
     .image {
         position: relative;
-        img{
+
+        img {
             width: 150px;
-            margin: 20px 0 0 10px;
+            margin: 1.25rem 0 0 0.625rem;
             border-radius: 30%;
             border: 5px solid a.$color-pinker;
         }
     }
 }
 
-@media screen and (min-width: 600px){
-    .about-container{
-        h2::after{
-            width: 300px;
-        }
-        .content{
-            flex-direction: row;
-            align-items: unset;
+@media screen and (min-width: 600px) {
+    #about {
+        border: none;
 
-            .p-content{
-                width: 60%;
-                padding: 5px 10px;
-
-                .skills{
-                    li::before{
-                        font-size: 8px;
-                    }
-                }
+        .about-container {
+            h2::after {
+                width: 300px;
             }
 
-            .image{
-                margin: 3em 10px;
+            .content {
+                flex-direction: row;
+                align-items: unset;
+    
+                .p-content {
+                    width: 60%;
+                    padding: 0.3rem 0.625rem;
+    
+                    .skills {
+                        li::before {
+                            font-size: 0.5rem;
+                        }
+                    }
+                }
+    
+                .image {
+                    margin: 2.988rem 0.625rem;
+                }
             }
         }
     }
 }
 
-@media only screen and (min-width: 768px){
-    h2{
-        font-size: 23px;
+@media only screen and (min-width: 768px) {
+    h2 {
+        font-size: 1.4375rem;
     }
-    .content{
+
+    .content {
         column-gap: 50px;
     }
 }
 
-@media only screen and (min-width: 1200px){
-    #about{
-        padding-top: 100px;
+@media only screen and (min-width: 1200px) {
+    #about {
+        padding-top: 6.25rem;
 
-        .about-container{
-            h2::before{
-                font-size: 20px;
+        .about-container {
+            h2::before {
+                font-size: 1.25rem;
             }
-            h2{
-                font-size: 27px;
+
+            h2 {
+                font-size: 1.6875rem;
             }
-            h2::after{
+
+            h2::after {
                 width: 500px;
             }
-            .content{
-                .p-content{
-                    padding: 5px 20px;
 
-                    p{
-                        font-size: 20px;
+            .content {
+                .p-content {
+                    padding: 0.3rem 1.25rem;
+
+                    p {
+                        font-size: 1.25rem;
                     }
 
-                    .skills{
+                    .skills {
                         grid-template-columns: repeat(2, minmax(80px, 200px));
 
-                        li{
-                            font-size: 20px;
+                        li {
+                            font-size: 1.25rem;
                         }
-                        li::before{
-                            font-size: 13px;
+
+                        li::before {
+                            font-size: 0.81rem;
                         }
                     }
                 }
-                .image{
+
+                .image {
                     width: 30%;
                     margin: 0;
                     display: flex;
                     justify-content: center;
                     align-items: center;
 
-                    img{
+                    img {
                         width: 250px;
                     }
                 }

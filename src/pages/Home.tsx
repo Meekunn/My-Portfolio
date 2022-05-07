@@ -11,7 +11,7 @@ const Home = () => {
             <>
                 <div className="home-container">
                     <div className="intro">
-                        <h1>Hola, mi nombre es</h1>
+                        <h1>Hola, my name is</h1>
                         <h2>Adedamola Orofin</h2>
                         <Typewriter
                         options={{

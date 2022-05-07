@@ -1,43 +1,92 @@
 import { Link } from 'react-scroll'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import "./navbar.scss"
 
 const Navbar = () => {
 
     const [isMobile, setIsMobile] = useState<boolean>(false)
-    const [screenSize, setScreenSize] = useState<number>(window.innerWidth)
-    
-    useEffect(() => {
-        const changeWidth = () => {
-            setScreenSize(window.innerWidth)
-        }
-        window.addEventListener('resize', changeWidth)
-        return () => {
-            window.removeEventListener('resize', changeWidth)
-        }
-    }, [])
 
     return(
         <>
             <nav className="nav-container">
                 <div className="logo">
                     <span style={{color: "#c3073f"}}>&#60;</span>
-                    <span style={{color: "#4e4e50"}}><Link to='home'>Meekun</Link></span>
+                    <span style={{color: "#a7a7a7"}}>
+                        <Link 
+                            to='home' 
+                            duration={600} 
+                            smooth={true} 
+                            onClick={()=>setIsMobile(false)}
+                        >
+                            Meekun
+                        </Link>
+                    </span>
                     <span style={{color: "#c3073f"}}>/&#62;</span>
                 </div>
-                {(isMobile || screenSize > 600 ) && (
-                <div className={ isMobile ? "navbar-mobile" : "navbar"}>
+                <div className={ isMobile ? "navbar mobile" : "navbar"}>
                     <ol>
                         <li>
-                            <Link to='home' spy={true} duration={600} smooth={true} className="nav-link" onClick={()=>setIsMobile(false)}>Home</Link>
+                            <Link to='home'
+                                activeClass="active"
+                                spy={true} 
+                                duration={600} 
+                                smooth={true} 
+                                className="nav-link" 
+                                onClick={()=>setIsMobile(false)}
+                            >
+                                Home
+                            </Link>
                         </li>
-                        <li><Link to='about' spy={true} duration={600} smooth={true} className="nav-link" onClick={()=>setIsMobile(false)}>About</Link></li>
-                        <li><Link to='resume' spy={true} duration={600} smooth={true} className="nav-link" onClick={()=>setIsMobile(false)}>Resume</Link></li>
-                        <li><Link to='project' spy={true} duration={600} smooth={true} className="nav-link" onClick={()=>setIsMobile(false)}>Project</Link></li>
-                        <li><Link to='contact' spy={true} duration={600} smooth={true} className="nav-link" onClick={()=>setIsMobile(false)}>Contact</Link></li>
+                        <li>
+                            <Link to='about'
+                                activeClass="active"
+                                spy={true}
+                                duration={600} 
+                                smooth={true} 
+                                className="nav-link" 
+                                onClick={()=>setIsMobile(false)}
+                            >
+                                About
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to='resume'
+                                activeClass="active"
+                                spy={true}
+                                duration={600} 
+                                smooth={true} 
+                                className="nav-link" 
+                                onClick={()=>setIsMobile(false)}
+                            >
+                                Resume
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to='project'
+                                activeClass="active"
+                                spy={true}
+                                duration={600} 
+                                smooth={true} 
+                                className="nav-link" 
+                                onClick={()=>setIsMobile(false)}
+                            >
+                                Projects
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to='contact'
+                                activeClass="active"
+                                spy={true}
+                                duration={600} 
+                                smooth={true} 
+                                className="nav-link" 
+                                onClick={()=>setIsMobile(false)}
+                            >
+                                Contact
+                            </Link>
+                        </li>
                     </ol>
                 </div>
-                )}
                 <button className="mobile-nav-icon" onClick={() => setIsMobile(!isMobile)} >
                     {isMobile ? (
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">

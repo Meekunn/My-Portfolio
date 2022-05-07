@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: Merienda
+- Font Author: Copyright (c) 2011-2012, Eduardo Tunni (http://www.tipo.net.ar), with Reserved Font Name 'Merienda'
+- Font Source: http://fonts.gstatic.com/s/merienda/v14/gNMHW3x8Qoy5_mf8uVMCOou6_dvg.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))

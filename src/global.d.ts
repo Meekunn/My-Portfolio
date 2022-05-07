@@ -1,11 +1,3 @@
-interface IRoutes {
-    path: string;
-    exact: boolean;
-    component: any;
-    name: string;
-    props?: any;
-}
-
 interface IDetails {
     id: number;
     role: string;
