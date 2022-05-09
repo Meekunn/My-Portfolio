@@ -1,6 +1,7 @@
 @use '../../styles/base' as a; 
 
 .nav-container {
+    cursor: pointer;
     background-color: a.$dark-background;
     opacity: 0.9;
     padding: 0.9rem 0.625rem;
