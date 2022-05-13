@@ -4,14 +4,6 @@ import '../styles/pages/exp.scss'
 const details: IDetails [] = [
     {
         id: 1,
-        role: "Intern",
-        office: "Bright Network",
-        link: "https://www.brightnetwork.co.uk/",
-        date: "Dec 2020 - Jan 2021",
-        li1: "Remote Internship",
-        li2: "Acquired skills in time management, teamwork, and collaboration."
-    },{
-        id: 2,
         role: "Junior Web Developer",
         office: "Weixel Tech",
         link: "https://weixeltech.com/",
@@ -19,6 +11,14 @@ const details: IDetails [] = [
         li1: "Worked as a Junior Web Developer",
         li2: "Learned ReactJS and NextJS frameworks.",
         li3: "Learned to use Firebase for web applications"
+    }, {
+        id: 2,
+        role: "Intern",
+        office: "Bright Network",
+        link: "https://www.brightnetwork.co.uk/",
+        date: "Dec 2020 - Jan 2021",
+        li1: "Remote Internship",
+        li2: "Acquired skills in time management, teamwork, and collaboration."
     }
 ]
 
@@ -30,8 +30,7 @@ const education: IDetails [] = [
         link: "https://futa.edu.ng/",
         date: "2018 - Present",
         li1: "Department of Information and Communication Technology",
-        li2: "3rd year student",
-        li3: "CGPA of 4.66"
+        li2: "3rd year student"
     }
 ]
 

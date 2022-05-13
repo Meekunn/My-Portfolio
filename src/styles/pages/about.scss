@@ -87,9 +87,9 @@
         position: relative;
 
         img {
-            width: 150px;
+            width: 280px;
             margin: 1.25rem 0 0 0.625rem;
-            border-radius: 30%;
+            border-radius: 28px;
             border: 5px solid a.$color-pinker;
         }
     }
@@ -183,7 +183,8 @@
                     align-items: center;
 
                     img {
-                        width: 250px;
+                        width: 90%;
+                        border: 3px solid #950740;
                     }
                 }
             }

@@ -20,7 +20,7 @@ const About = () => {
                             <li>Firebase</li>
                             <li>HTML &#38; CSS</li>
                             <li>Git</li>
-                            <li>JavaScript</li>
+                            <li>TypeScript</li>
                             <li>Github</li> 
                         </ul>
                     </div>
