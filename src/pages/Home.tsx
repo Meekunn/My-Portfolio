@@ -1,6 +1,7 @@
 import Typewriter from "typewriter-effect"
 import Animation from "../component/Animation/Animation"
 import TechMoji from '../images/techmoji.png'
+import Cartoonify from "../images/Cartoonify.png"
 
 import "../styles/pages/home.scss"
 
@@ -25,7 +26,7 @@ const Home = () => {
                         />
                     </div>
                     <div className='png'>
-                        <img src={TechMoji} alt="Tech lady png"/>
+                        <img src={Cartoonify} alt="Avatar png"/>
                     </div>
                 </div>
             </>
